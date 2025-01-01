@@ -1,0 +1,167 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffaf0; /* Floral White */
+  color: #333; /* Dark text for contrast */
+  transition: background-color 0.5s ease;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Logo Styling */
+.logo {
+  width: 100px; /* Adjust the size of the logo */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Center the logo and add spacing below */
+}
+
+/* Heading Styling */
+h1,
+h3 {
+  color: #333;
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 2.5rem; /* Scalable for all screens */
+}
+
+h3 {
+  font-size: 1.2rem; /* Secondary heading size */
+}
+
+h4 {
+  color: #006400; /* Dark green for better contrast */
+}
+
+/* Input Field and Button */
+.input-field {
+  padding: 10px;
+  width: 80%;
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Subtle light background for inputs */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #ffd700; /* Bright golden button */
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #ffc107; /* Slightly darker gold on hover */
+}
+
+/* Weather Result Section */
+.result {
+  margin-top: 20px;
+  background-color: #ffffff; /* Pure white background */
+  padding: 20px;
+  border-radius: 10px;
+  display: none; /* Initially hidden */
+  width: 100%; /* Full width for smaller devices */
+  max-width: 600px; /* Limit width for larger devices */
+  text-align: left;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Recommendations List Styling */
+ul li {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive Adjustments for Laptops */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .result {
+    width: 90%; /* Slight margin for larger devices */
+    padding: 20px;
+  }
+
+  .input-field {
+    max-width: 320px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Adjustments for Tablets and Mobile */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Slightly smaller heading */
+  }
+
+  h3 {
+    font-size: 1rem; /* Compact subheading */
+  }
+
+  .input-field {
+    width: 85%;
+  }
+
+  .btn {
+    width: 85%;
+    margin: 10px 0;
+  }
+
+  .result {
+    width: 95%; /* Utilize most of the screen width */
+    padding: 15px;
+  }
+
+  ul li {
+    font-size: 0.9rem; /* Compact font for small screens */
+  }
+}
+
+/* Very Small Screens */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .input-field {
+    width: 90%;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+
+  .result {
+    width: 95%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  ul li {
+    font-size: 0.85rem;
+  }
+}
