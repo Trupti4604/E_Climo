@@ -3,19 +3,19 @@
     "name": "weather-website",
     "builds": [
       {
-        "src": "*.html",
+        "src": "index.html",
         "use": "@vercel/static"
       },
       {
-        "src": "*.css",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "*.js",
+        "src": "statics/**",
         "use": "@vercel/static"
       }
     ],
     "routes": [
+      {
+        "src": "/statics/(.*)",
+        "dest": "/statics/$1"
+      },
       {
         "src": "/(.*)",
         "dest": "/index.html"
