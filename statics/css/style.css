@@ -37,6 +37,38 @@ h4 {
   color: #006400; /* Dark green for better contrast */
 }
 
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+nav ul li a.active {
+  background-color: #333;
+  color: #fff;
+}
+
 /* Input Field and Button */
 .input-field {
   padding: 10px;
@@ -87,6 +119,38 @@ ul li {
   line-height: 1.4;
 }
 
+/* Styling for About, Features, and Technologies Sections in Boxes */
+section {
+  margin: 20px 0;
+}
+
+.about, .features, .technologies {
+  background-color: #ffffff; /* White background for content boxes */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* Full width for smaller devices */
+  max-width: 800px; /* Limit width for larger devices */
+}
+
+h4 {
+  color: #006400; /* Dark green for better contrast */
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
 /* Responsive Adjustments for Laptops */
 @media screen and (max-width: 1024px) {
   h1 {
@@ -94,7 +158,7 @@ ul li {
   }
 
   .result {
-    width: 90%; /* Slight margin for larger devices */
+    width: 90%;
     padding: 20px;
   }
 
@@ -105,38 +169,59 @@ ul li {
   .btn {
     font-size: 0.9rem;
   }
+
+  .about, .features, .technologies {
+    width: 90%;
+    padding: 20px;
+  }
 }
 
 /* Responsive Adjustments for Tablets and Mobile */
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 2rem; /* Slightly smaller heading */
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1rem; /* Compact subheading */
+    font-size: 1rem;
   }
 
   .input-field {
-    width: 85%;
+    width: 90%;
+    max-width: 300px;
   }
 
   .btn {
-    width: 85%;
-    margin: 10px 0;
+    font-size: 0.8rem;
   }
 
   .result {
-    width: 95%; /* Utilize most of the screen width */
+    width: 100%;
     padding: 15px;
   }
 
-  ul li {
-    font-size: 0.9rem; /* Compact font for small screens */
+  nav ul {
+    padding-left: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .about, .features, .technologies {
+    width: 95%; /* Utilize more screen space */
+    padding: 15px;
   }
 }
 
-/* Very Small Screens */
+/* Responsive Adjustments for Small Mobile Devices */
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
@@ -148,20 +233,24 @@ ul li {
 
   .input-field {
     width: 90%;
+    max-width: 280px;
   }
 
   .btn {
-    width: 90%;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .result {
-    width: 95%;
+    width: 100%;
     padding: 10px;
-    font-size: 0.9rem;
   }
 
-  ul li {
-    font-size: 0.85rem;
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .about, .features, .technologies {
+    width: 100%; /* Full width for small screens */
+    padding: 10px;
   }
 }

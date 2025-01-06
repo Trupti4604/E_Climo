@@ -1,25 +1,48 @@
 {
-    "version": 2,
-    "name": "weather-website",
-    "builds": [
-      {
-        "src": "index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "statics/**",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/statics/(.*)",
-        "dest": "/statics/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "name": "website",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "about.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "features.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "technologies.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "statics/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/statics/(.*)",
+      "dest": "/statics/$1"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/features",
+      "dest": "/features.html"
+    },
+    {
+      "src": "/technologies",
+      "dest": "/technologies.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

@@ -10,17 +10,18 @@
 
 <body>
   <div class="container">
-    <!-- Logo Added Here -->
     <img src="./statics/images/logo.png" alt="Eclimo Logo" class="logo">
     <h1>Eclimo</h1>
     <h3>Weather Based Lifestyle Recommendations</h3>
-    
-    <p class="description">
-      Eclimo is designed to provide you with adaptive lifestyle recommendations based on real-time weather data. <br>
-      Whether it's about choosing the right clothing, skincare routines, or the best activities to enjoy indoors or outdoors, <br>
-      this platform helps you make informed decisions tailored to the current weather in your city. <br>
-      Additionally, Eclimo suggests suitable yoga postures to enhance your well-being in harmony with the prevailing weather conditions.
-    </p>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+      </ul>
+    </nav>
 
     <input type="text" id="city" class="input-field" placeholder="Enter City">
     <button class="btn" onclick="getWeather()">Get Weather</button>

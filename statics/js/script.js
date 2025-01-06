@@ -100,24 +100,24 @@ function showRecommendations(temp) {
     skincare.push("Apply thicker moisturizer, Stay hydrated");
   }
 
-  let recommendationHTML = `
-        <h4>Clothing:</h4><ul>${clothing
-          .map((item) => `<li>${item}</li>`)
-          .join("")}</ul>
-        <h4>Food:</h4><ul>${food
-          .map((item) => `<li>${item}</li>`)
-          .join("")}</ul>
-        <h4>Exercise/Yoga:</h4><ul>${exercise
-          .map((item) => `<li>${item}</li>`)
-          .join("")}</ul>
-        <h4>Yoga Posture:</h4><p>${yogaPosture}</p>
-        <h4>Games:</h4><ul>${games
-          .map((item) => `<li>${item}</li>`)
-          .join("")}</ul>
-        <h4>Skincare:</h4><ul>${skincare
-          .map((item) => `<li>${item}</li>`)
-          .join("")}</ul>
-    `;
+  let recommendationHTML = `        
+    <h4>Clothing:</h4><ul>${clothing
+      .map((item) => `<li>${item}</li>`)
+      .join("")}</ul>
+    <h4>Food:</h4><ul>${food
+      .map((item) => `<li>${item}</li>`)
+      .join("")}</ul>
+    <h4>Exercise/Yoga:</h4><ul>${exercise
+      .map((item) => `<li>${item}</li>`)
+      .join("")}</ul>
+    <h4>Yoga Posture:</h4><p>${yogaPosture}</p>
+    <h4>Games:</h4><ul>${games
+      .map((item) => `<li>${item}</li>`)
+      .join("")}</ul>
+    <h4>Skincare:</h4><ul>${skincare
+      .map((item) => `<li>${item}</li>`)
+      .join("")}</ul>
+  `;
 
   document.getElementById("recommendations").innerHTML = recommendationHTML;
 }
