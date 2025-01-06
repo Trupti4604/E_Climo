@@ -1,0 +1,4 @@
+api of open weather: 8d50721f6ef4337f12b843e0fcf87729
+
+-: ClimFit
+Highlights both climate and fitness, aligning with personalized lifestyle recommendations.
