@@ -1,21 +1,14 @@
 /* General Styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #fffaf0; /* Floral White */
+  background: url('/statics/images/logo.png') no-repeat center center fixed; /* Logo as background */
+  background-size: cover; /* Ensures the logo covers the entire background */
   color: #333; /* Dark text for contrast */
   transition: background-color 0.5s ease;
   padding: 20px;
   text-align: center;
   margin: 0;
   box-sizing: border-box;
-}
-
-/* Logo Styling */
-.logo {
-  width: 100px; /* Adjust the size of the logo */
-  height: auto;
-  display: block;
-  margin: 0 auto 10px; /* Center the logo and add spacing below */
 }
 
 /* Heading Styling */
@@ -26,11 +19,12 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem; /* Scalable for all screens */
+  font-size: 5rem; /* Increased font size for Eclimo */
+  font-weight: bold; /* Ensures Eclimo stands out */
 }
 
 h3 {
-  font-size: 1.2rem; /* Secondary heading size */
+  font-size: 1.4rem; /* Secondary heading size */
 }
 
 h4 {

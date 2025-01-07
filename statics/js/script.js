@@ -121,3 +121,7 @@ function showRecommendations(temp) {
 
   document.getElementById("recommendations").innerHTML = recommendationHTML;
 }
+
+function reloadPage() {
+  window.location.reload();
+}
