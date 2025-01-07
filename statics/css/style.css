@@ -11,6 +11,16 @@ body {
   box-sizing: border-box;
 }
 
+/* Logo Styling */
+.logo-container {
+  margin-bottom: 20px; /* Space between the logo and Eclimo heading */
+}
+
+.logo {
+  max-width: 150px; /* Adjust size of the logo */
+  height: auto;
+}
+
 /* Heading Styling */
 h1,
 h3 {

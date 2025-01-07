@@ -43,8 +43,11 @@ function getWeather() {
       const weatherResult = document.getElementById("weather-result");
       weatherResult.style.display = "block"; // Make it visible
 
-      changeBackgroundColor(temperature);
+      // Display recommendations after showing weather data
       showRecommendations(temperature);
+
+      // Change the background color after displaying recommendations
+      changeBackgroundColor(temperature);
     })
     .catch((error) => console.error("Error fetching weather data:", error));
 }
