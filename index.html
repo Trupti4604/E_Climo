@@ -4,36 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eclimo - Weather Based Lifestyle Recommendations</title>
+  <title>Eclimo - Weather & Mood-Based Lifestyle Recommendations</title>
   <link rel="stylesheet" href="./statics/css/style.css">
 </head>
 
 <body>
   <div class="container">
-    <!-- Logo Section (Logo added on top of Eclimo) -->
+    <!-- Logo Section -->
     <div class="logo-container">
       <img src="./statics/images/logop.png" alt="Logo" class="logo">
     </div>
 
     <!-- Main Heading -->
     <h1>Eclimo</h1>
-    <h3>Weather Based Lifestyle Recommendations</h3>
+    <h3>Weather & Mood-Based Lifestyle Recommendations</h3>
 
     <!-- Navigation Bar -->
     <nav>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="mood.html">Mood-Based Recommendations</a></li> <!-- NEW MOOD OPTION -->
         <li><a href="about.html">About</a></li>
         <li><a href="features.html">Features</a></li>
         <li><a href="technologies.html">Technologies</a></li>
       </ul>
     </nav>
 
-    <!-- Input and Buttons Section -->
+    <!-- Input Section -->
     <div class="input-section">
       <input type="text" id="city" class="input-field" placeholder="Enter City">
       <div class="btn-group">
-        <button class="btn" onclick="getWeather()">Get Weather</button>
+        <button class="btn" onclick="getWeather()">Get Recommendations</button>
         <button class="btn" onclick="reloadPage()">Reload</button>
       </div>
     </div>

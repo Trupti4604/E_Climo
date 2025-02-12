@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technologies - Eclimo</title>
+  <title>Eclimo</title>
   <link rel="stylesheet" href="./statics/css/style.css">
 </head>
 
 <body>
   <div class="container">
-    
     <h1>Eclimo</h1>
     <h3>Weather Based Lifestyle Recommendations</h3>
 
@@ -24,17 +23,24 @@
       </ul>
     </nav>
 
-    <section class="technologies">
-      <h2>Technologies Used</h2>
-      <ul>
-        <li><strong>HTML:</strong> Structures the website content.</li>
-        <li><strong>CSS:</strong> Styles the website for a user-friendly and visually appealing design.</li>
-        <li><strong>JavaScript:</strong> Handles dynamic content and interactivity.</li>
-        <li><strong>OPENWEATHERMAP API:</strong> Provides real-time weather data for informed recommendations.</li>
-        <li><strong>GitHub & Vercel:</strong> Hosts and deploys the website for global accessibility.</li>
-      </ul>
-    </section>
+    <div class="input-section">
+      <select id="mood" class="input-field">
+        <option value="" disabled selected>Select Your Mood</option>
+        <option value="tired">Tired</option>
+        <option value="stressed">Stressed</option>
+        <option value="active">Active</option>
+      </select>
+      <button class="btn" onclick="getMoodRecommendations()">Get Recommendations</button>
+    </div>
+
+    <!-- Mood Result Section -->
+    <div id="mood-result" class="result">
+      <h3>Recommended Activities</h3>
+      <div id="mood-recommendations"></div>
+    </div>
   </div>
+
+  <script src="./statics/js/mood.js"></script>
 </body>
 
 </html>
