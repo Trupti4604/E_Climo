@@ -18,6 +18,10 @@
       "use": "@vercel/static"
     },
     {
+      "src": "mood.html",
+      "use": "@vercel/static"
+    },
+    {
       "src": "statics/**/*",
       "use": "@vercel/static"
     }
@@ -38,6 +42,10 @@
     {
       "src": "/technologies",
       "dest": "technologies.html"
+    },
+    {
+      "src": "/mood",
+      "dest": "mood.html"
     },
     {
       "src": "/statics/(.*)",
